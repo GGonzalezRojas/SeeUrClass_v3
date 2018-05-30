@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block nav %} 
+<li class="active">
+    <a href="base.html">
+        <i class="menu-icon fa fa-dashboard"></i>Dashboard </a>
+</li>
+<h3 class="menu-title">Cursos</h3>
+{% endblock nav %}
+
+{% block header_right%}
+<div class="breadcrumbs">
+    <div class="col-sm-4">
+        <div class="page-header float-left">
+            <div class="page-title">
+                <h1>Profesor</h1>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-8">
+        <div class="page-header float-right">
+            <div class="page-title">
+                <ol class="breadcrumb text-right">
+                    <li class="active">Dashboard</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock header_right %}
+
+
+{% block foot_left %}
+<h3 class="menu-title">Extras</h3>
+<!-- /.menu-title -->
+<li class="menu-item-has-children dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="menu-icon fa ti-panel"></i>Acciones</a>
+    <ul class="sub-menu children dropdown-menu">
+        <li>
+            <i class="menu-icon fa fa-sign-in"></i>
+            <a href="/logout/">Logout</a>
+        </li>
+        <li>
+            <i class="menu-icon fa fa-sign-in"></i>
+            <a href="#">Register</a>
+        </li>
+        <li>
+            <i class="menu-icon fa fa-paper-plane"></i>
+            <a href="#">Forget Pass</a>
+        </li>
+    </ul>
+</li>
+{% endblock foot_left %}
