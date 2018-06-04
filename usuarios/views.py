@@ -66,3 +66,8 @@ def login_if_active(request, user):
         return redirect(reverse('dashboard'))
     else:
         messages.error(request, 'El usuario no está activo')
+
+
+@login_required(login_url='/crear_alumno/')
+def crear_alumno(request):
+    return render(request, 'administrador/crear_alumno.html')
