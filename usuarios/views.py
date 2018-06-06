@@ -68,12 +68,12 @@ def login_if_active(request, user):
         messages.error(request, 'El usuario no está activo')
 
 
-#@login_required(login_url='/crear_alumno/')
+@login_required(login_url='/crear_alumno/')
 def crear_alumno(request):
     return render(request, 'administrador/crear_alumno.html')
 
 
-#@login_required(login_url='/editar_alumno/')
+@login_required(login_url='/editar_alumno/')
 def editar_alumno(request):
     return render(request, 'administrador/editar_alumno.html')
 
