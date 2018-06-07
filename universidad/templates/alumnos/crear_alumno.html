@@ -31,12 +31,28 @@
               <div class="card-header">Nuevo Alumno</div>
               <div class="card-body card-block">
                 <form action="" method="post" class="">
+
+                    <div class="form-group">
+                    <div class="input-group">
+                      <div class="input-group-addon"><i class="fa fa-user"></i></div>
+                      <input type="text" id="username" name="rut" placeholder="RUT" class="form-control">
+                    </div>
+                  </div>
+
                   <div class="form-group">
                     <div class="input-group">
                       <div class="input-group-addon"><i class="fa fa-user"></i></div>
-                      <input type="text" id="username" name="username" placeholder="Username" class="form-control">
+                      <input type="text" id="username" name="nombre" placeholder="Nombre" class="form-control">
                     </div>
                   </div>
+
+                    <div class="form-group">
+                    <div class="input-group">
+                      <div class="input-group-addon"><i class="fa fa-user"></i></div>
+                      <input type="text" id="username" name="apellido" placeholder="Apellido" class="form-control">
+                    </div>
+                  </div>
+
                   <div class="form-group">
                     <div class="input-group">
                       <div class="input-group-addon"><i class="fa fa-envelope"></i></div>
@@ -44,7 +60,12 @@
                     </div>
                   </div>
 
-                  <div class="form-actions form-group"><button type="submit" class="btn btn-success btn-sm">Submit</button></div>
+                     <div class="row form-group">
+                        <div class="col col-md-3"><label for="file-input" class=" form-control-label">Imagen</label></div>
+                        <div class="col-12 col-md-9"><input type="file" id="file-input" name="file-input" class="form-control-file"></div>
+                      </div>
+
+                  <div class="form-actions form-group"><button type="submit" class="btn btn-success btn-sm">Registrar</button></div>
                 </form>
               </div>
             </div>
