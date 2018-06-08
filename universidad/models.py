@@ -1,26 +1,15 @@
 from django.db import models
 from usuarios.models import Profesor
-
-
-class Imagen(models.Model):
-    ruta_imagen = models.ImageField(null=True, default='rutaimagen')
-
-
-class Alumno(models.Model):
-    rut = models.CharField(max_length=10, unique=True, null=False, default='11111111-1')
-    imagen = models.OneToOneField(Imagen, null=True, on_delete=models.CASCADE)
-    nombre = models.CharField(max_length=100)
-    apellido = models.CharField(max_length=100)
-
-    def __str__(self):
-        return 'Nombre: {nombre} {apellido}'.format(nombre=self.nombre, apellido=self.apellido)
+from asistencia.models import Alumno, Asistencia
 
 
 class Curso(models.Model):
-    profesor = models.OneToOneField(Profesor, null=False, on_delete=models.CASCADE, related_name='curso')
-    alumnos = models.ForeignKey(Alumno, on_delete=models.CASCADE, related_name='curso')
+    profesor = models.OneToOneField(Profesor, null=False, on_delete=models.CASCADE, related_name='profesor')
+    alumnos = models.ForeignKey(Alumno, on_delete=models.CASCADE, related_name='alumnos')
+    #asistencia = models.OneToOneField(Asistencia, on_delete=models.CASCADE, related_name='asistencia')
     nombre = models.CharField(max_length=100)
     codigo = models.CharField(max_length=100)
+    seccion = models.CharField(max_length=50)
     fecha_creacion = models.DateField(auto_now=True)
 
     def __str__(self):
