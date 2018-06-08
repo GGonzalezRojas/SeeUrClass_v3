@@ -6,14 +6,15 @@ from asistencia.models import Alumno, Asistencia
 class Curso(models.Model):
     profesor = models.OneToOneField(Profesor, null=False, on_delete=models.CASCADE, related_name='profesor')
     alumnos = models.ForeignKey(Alumno, on_delete=models.CASCADE, related_name='alumnos')
-    #asistencia = models.OneToOneField(Asistencia, on_delete=models.CASCADE, related_name='asistencia')
+    asistencia = models.ForeignKey(Asistencia, on_delete=models.CASCADE, related_name='asistencia')
     nombre = models.CharField(max_length=100)
     codigo = models.CharField(max_length=100)
     seccion = models.CharField(max_length=50)
-    fecha_creacion = models.DateField(auto_now=True)
+    semestre = models.CharField(max_length=50)
+    fecha = models.DateField(auto_now=True)
 
     def __str__(self):
-        return 'Nombre: {nombre} {codigo}'.format(nombre=self.nombre, codigo=self.codigo)
+        return 'Curso: {nombre} {codigo}'.format(nombre=self.nombre, codigo=self.codigo)
 
 
 class Carrera(models.Model):

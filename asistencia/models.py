@@ -8,7 +8,7 @@ class Imagen(models.Model):
 
 class Alumno(models.Model):
     imagen = models.OneToOneField(Imagen, null=True, on_delete=models.CASCADE)
-    carrera = models.OneToOneField(Carrera, on_delete=models.CASCADE)
+    carrera = models.ForeignKey(Carrera, on_delete=models.CASCADE)
     rut = models.CharField(max_length=10, unique=True, null=False, default='11111111-1')
     nombre = models.CharField(max_length=100)
     apellido = models.CharField(max_length=100)
@@ -18,7 +18,8 @@ class Alumno(models.Model):
 
 
 class Asistencia(models.Model):
-    curso = models.OneToOneField(Curso, on_delete=models.CASCADE)
+    curso = models.OneToOneField(Curso)
+    seccion = models.CharField(max_length=50)
     alumno = models.OneToOneField(Alumno, on_delete=models.CASCADE)
     fecha = models.DateField(auto_now=True)
 
