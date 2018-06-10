@@ -1,4 +1,4 @@
-from django.urls import path
+from django.urls import path, include
 from . import views
 
 urlpatterns = [
@@ -8,7 +8,5 @@ urlpatterns = [
     path('admin_login/', views.admin_login, name='admin_login'),
     path('admin_logout/', views.admin_logout, name='admin_logout'),
     path('admin_dashboard/', views.admin_dashboard, name='admin_dashboard'),
-    path('crear_alumno/', views.crear_alumno, name='crear_alumno'),
-    path('editar_alumno/', views.editar_alumno, name='editar_alumno'),
-    path('borrar_alumno/', views.borrar_alumno, name='borrar_alumno')
+    path('', include('universidad.urls'))
 ]

@@ -26,50 +26,60 @@
         </div> <!-- Fin Cabecera -->
 
     <!-- Inicio Formulario -->
+    <form action="" method="POST" class="">
          <div class="col-lg-6 ">
             <div class="card">
               <div class="card-header">Nuevo Alumno</div>
               <div class="card-body card-block">
-                <form action="" method="post" class="">
 
+                    {% csrf_token %}
                     <div class="form-group">
                     <div class="input-group">
                       <div class="input-group-addon"><i class="fa fa-user"></i></div>
-                      <input type="text" id="username" name="rut" placeholder="RUT" class="form-control">
+                      <input type="text" id="rut" name="rut" placeholder="11111111-1" class="form-control">
                     </div>
                   </div>
 
                   <div class="form-group">
                     <div class="input-group">
                       <div class="input-group-addon"><i class="fa fa-user"></i></div>
-                      <input type="text" id="username" name="nombre" placeholder="Nombre" class="form-control">
+                      <input type="text" id="nombre" name="nombre" placeholder="Nombre" class="form-control">
                     </div>
                   </div>
 
                     <div class="form-group">
                     <div class="input-group">
                       <div class="input-group-addon"><i class="fa fa-user"></i></div>
-                      <input type="text" id="username" name="apellido" placeholder="Apellido" class="form-control">
+                      <input type="text" id="apellido" name="apellido" placeholder="Apellido" class="form-control">
                     </div>
                   </div>
-
-                  <div class="form-group">
-                    <div class="input-group">
-                      <div class="input-group-addon"><i class="fa fa-envelope"></i></div>
-                      <input type="email" id="email" name="email" placeholder="Email" class="form-control">
-                    </div>
-                  </div>
-
                      <div class="row form-group">
                         <div class="col col-md-3"><label for="file-input" class=" form-control-label">Imagen</label></div>
-                        <div class="col-12 col-md-9"><input type="file" id="file-input" name="file-input" class="form-control-file"></div>
+                        <div class="col-12 col-md-9"><input type="file" id="imagen" name="imagen" class="form-control-file"></div>
                       </div>
 
                   <div class="form-actions form-group"><button type="submit" class="btn btn-success btn-sm">Registrar</button></div>
-                </form>
               </div>
             </div>
           </div>
+
+        <!-- Seleccion -->
+         <div class="col-xs-6 col-sm-6">
+            <div class="card">
+                <div class="card-header">
+                    <strong class="card-title">Seleccionar Carrera</strong>
+                </div>
+                <div class="card-body">
+                      <select name="select" id="select" class="form-control">
+                            <option value="">Selecciones una opción</option>
+                            <option value="ING-01">Ingeniería civil industrial</option>
+                            <option value="ING-02">Ingeniería civil en informatica y telecomunicaciones</option>
+                            <option value="ING-03">Ingeniería civil en obras civiles</option>
+                      </select>
+                </div>
+            </div>
+        </div>
+    </form>
 
 
 {% endblock main_right %}
