@@ -3,11 +3,22 @@ from django.contrib import messages
 from django.contrib.auth import authenticate, login as django_login, logout as django_logout
 from django.contrib.auth.decorators import login_required
 from django.urls import reverse
+from universidad.models import *
 
 
 @login_required(login_url='/login/')
 def dashboard(request):
-    return render(request, 'profesor/dashboard.html')
+    context = {}
+    nombre, apellido = nombre_apellido(request)
+    context['nombre_profesor'] = nombre
+    context['apellido_profesor'] = apellido
+    return render(request, 'profesor/dashboard.html', context)
+
+
+def nombre_apellido(request):
+    usuario = request.user
+    profesor = Profesor.objects.get(user__username=usuario)
+    return profesor.user.first_name, profesor.user.last_name
 
 
 @login_required(login_url='/admin_login/')

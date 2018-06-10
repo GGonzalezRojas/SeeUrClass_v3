@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from universidad.models import Alumno, Carrera
+from universidad.models import *
 
 def crear_alumno(request):
     if request.method == 'POST':
@@ -25,5 +25,3 @@ def editar_alumno(request):
 
 def borrar_alumno(request):
     return render(request, 'alumnos/borrar_alumno.html')
-
-

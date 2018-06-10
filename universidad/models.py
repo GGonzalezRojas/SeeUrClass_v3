@@ -15,7 +15,7 @@ class Curso(models.Model):
 
 
 class Carrera(models.Model):
-    cursos = models.ForeignKey(Curso, on_delete=models.CASCADE, related_name='carrera')
+    cursos = models.ManyToManyField(Curso, related_name='carrera')
     nombre = models.CharField(max_length=100)
     codigo = models.CharField(max_length=100)
 
@@ -35,7 +35,7 @@ class Alumno(models.Model):
 
 
 class Facultad(models.Model):
-    carreras = models.ForeignKey(Carrera, on_delete=models.CASCADE, related_name='facultad')
+    carreras = models.ManyToManyField(Carrera, related_name='facultad')
     nombre = models.CharField(max_length=100)
     direccion = models.CharField(max_length=100)
 
