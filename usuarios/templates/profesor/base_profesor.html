@@ -7,7 +7,23 @@
     <a href="/dashboard/">
         <i class="menu-icon fa fa-dashboard"></i>Dashboard </a>
 </li>
-<h3 class="menu-title">Cursos</h3>
+<h3 class="menu-title">Universidad</h3>
+    <li class="menu-item-has-children dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-male"></i>Cursos</a>
+            <ul class="sub-menu children dropdown-menu">
+                <li><i class="fa fa-puzzle-piece"></i><a href="/mis_cursos/">Ver mis cursos</a></li>
+                <li><i class="fa fa-id-badge"></i><a href="#">Ver mis alumnos</a></li>
+                <li><i class="fa fa-bars"></i><a href="#">Ver mis clases</a></li>
+            </ul>
+
+<h3 class="menu-title">Asistencia</h3>
+    <li class="menu-item-has-children dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-male"></i>Asistencia</a>
+            <ul class="sub-menu children dropdown-menu">
+                <li><i class="fa fa-puzzle-piece"></i><a href="/asistencia_curso/">Asistencia por curso</a></li>
+                <li><i class="fa fa-id-badge"></i><a href="#">Asistencia por alumno</a></li>
+                <li><i class="fa fa-bars"></i><a href="#">Estadisticas</a></li>
+            </ul>
 {% endblock nav %}
 
 

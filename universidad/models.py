@@ -3,7 +3,7 @@ from usuarios.models import Profesor
 
 
 class Curso(models.Model):
-    profesor = models.OneToOneField(Profesor, null=False, on_delete=models.CASCADE, related_name='profesor')
+    profesor = models.ForeignKey(Profesor, null=False, on_delete=models.CASCADE, related_name='profesor')
     nombre = models.CharField(max_length=100)
     codigo = models.CharField(max_length=100)
     seccion = models.CharField(max_length=50)
@@ -24,7 +24,7 @@ class Carrera(models.Model):
 
 
 class Alumno(models.Model):
-    imagen = models.ImageField()
+    imagen = models.ImageField(null=True)
     carrera = models.OneToOneField(Carrera, on_delete=models.CASCADE, related_name='carrera')
     rut = models.CharField(max_length=10, unique=True, null=False, default='11111111-1')
     nombre = models.CharField(max_length=100)

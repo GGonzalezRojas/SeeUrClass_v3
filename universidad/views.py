@@ -1,5 +1,8 @@
+import boto3
+from boto3.dynamodb.conditions import Key, Attr
 from django.shortcuts import render
 from universidad.models import *
+
 
 def crear_alumno(request):
     if request.method == 'POST':
@@ -25,3 +28,21 @@ def editar_alumno(request):
 
 def borrar_alumno(request):
     return render(request, 'alumnos/borrar_alumno.html')
+
+
+def mis_cursos(request):
+    return render(request, 'profesores/mis_cursos.html')
+
+
+def asistencia_curso(request):
+    asistencia('tics3', 'asistencia_curso')
+    return render(request, 'profesores/asistencia_curso.html')
+
+
+def asistencia(value, table_name):
+    dynamodb = boto3.resource('dynamodb')
+    table = dynamodb.Table(table_name)
+    response = table.query(KeyConditionExpression=Key('curso').eq(value))
+    items = response['Items']
+    for item in items:
+        print(item)

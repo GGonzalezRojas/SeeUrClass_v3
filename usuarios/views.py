@@ -9,17 +9,34 @@ from universidad.models import *
 @login_required(login_url='/login/')
 def dashboard(request):
     context = {}
-    nombre, apellido = nombre_apellido(request)
+    nombre, apellido = obtener_nombre_apellido(request)
+    numero_alumnos = obtener_alumnos(request)
+    cursos = obtener_cursos(request)
     context['nombre_profesor'] = nombre
     context['apellido_profesor'] = apellido
+    context['cursos'] = cursos
+    context['numero_alumnos'] = numero_alumnos
     return render(request, 'profesor/dashboard.html', context)
 
 
-def nombre_apellido(request):
+def obtener_nombre_apellido(request):
     usuario = request.user
     profesor = Profesor.objects.get(user__username=usuario)
     return profesor.user.first_name, profesor.user.last_name
 
+
+def obtener_cursos(request):
+    usuario = request.user
+    cursos = Curso.objects.filter(profesor__user__username=usuario)
+    return cursos
+
+
+def obtener_alumnos(request):
+    cursos = obtener_cursos(request)
+    alumnos = []
+    for curso in cursos:
+        alumnos.append(Alumno.objects.filter(carrera__cursos=curso))
+    return len(alumnos)
 
 @login_required(login_url='/admin_login/')
 def admin_dashboard(request):
