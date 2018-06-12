@@ -2,23 +2,23 @@ import boto3
 from boto3.dynamodb.conditions import Key, Attr
 from django.shortcuts import render
 from universidad.models import *
+from usuarios.views import obtener_cursos
 
 
 def crear_alumno(request):
+    carreras = Carrera.objects.all()
     if request.method == 'POST':
         rut = request.POST.get('rut')
         nombre = request.POST.get('nombre')
         apellido = request.POST.get('apellido')
         imagen = request.POST.get('imagen')
-        cod_carrera = request.POST.get('select')
-        guardar_nuevo_alumno(rut, nombre, apellido, cod_carrera, imagen)
-    carreras = Carrera.objects.all()
-
+        pk_carrera = request.POST.get('select')
+        guardar_nuevo_alumno(rut, nombre, apellido, pk_carrera, imagen)
     return render(request, 'alumnos/crear_alumno.html', {'carreras': carreras})
 
 
-def guardar_nuevo_alumno(rut, nombre, apellido, cod_carrera, imagen):
-    carrera = Carrera.objects.get(codigo=cod_carrera)
+def guardar_nuevo_alumno(rut, nombre, apellido, pk_carrera, imagen):
+    carrera = Carrera.objects.get(id=pk_carrera)
     nuevo_alumno = Alumno(imagen=imagen, carrera=carrera, rut=rut,
                           nombre=nombre, apellido=apellido)
     nuevo_alumno.save()
@@ -33,7 +33,22 @@ def borrar_alumno(request):
 
 
 def mis_cursos(request):
-    return render(request, 'profesores/mis_cursos.html')
+    context = {}
+    cursos = obtener_cursos(request)
+    context['cursos'] = cursos
+    return render(request, 'profesores/mis_cursos.html', context)
+
+def ver_alumnos_curso(request):
+    context = {}
+    print("antes de if ")
+    if request.method == 'POST':
+        print("depues de if")
+        usuario = request.user
+        print(usuario)
+    #curso = Curso.objects.get(profesor__user__username=usuario)
+    #alumnos = AlumnoCurso.objects.filter(curso=)
+    #context['curso'] = curso
+    return render(request, 'profesores/ver_alumnos_curso.html')
 
 
 def asistencia_curso(request):

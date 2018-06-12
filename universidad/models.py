@@ -25,13 +25,21 @@ class Carrera(models.Model):
 
 class Alumno(models.Model):
     imagen = models.ImageField(null=True)
-    carrera = models.OneToOneField(Carrera, on_delete=models.CASCADE, related_name='carrera')
+    carrera = models.ForeignKey(Carrera, on_delete=models.CASCADE, related_name='carrera')
     rut = models.CharField(max_length=10, unique=True, null=False, default='11111111-1')
     nombre = models.CharField(max_length=100)
     apellido = models.CharField(max_length=100)
 
     def __str__(self):
-        return 'Nombre: {nombre} {apellido}'.format(nombre=self.nombre, apellido=self.apellido)
+        return 'Alumno: {nombre} {apellido}/{carrera}'.format(nombre=self.nombre, apellido=self.apellido, carrera=self.carrera.nombre)
+
+
+class AlumnoCurso(models.Model):
+    alumno = models.ManyToManyField(Alumno)
+    curso = models.ForeignKey(Curso, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return 'Alumnos en {curso}'.format(curso=self.curso.nombre)
 
 
 class Facultad(models.Model):
