@@ -12,7 +12,9 @@ def crear_alumno(request):
         imagen = request.POST.get('imagen')
         cod_carrera = request.POST.get('select')
         guardar_nuevo_alumno(rut, nombre, apellido, cod_carrera, imagen)
-    return render(request, 'alumnos/crear_alumno.html')
+    carreras = Carrera.objects.all()
+
+    return render(request, 'alumnos/crear_alumno.html', {'carreras': carreras})
 
 
 def guardar_nuevo_alumno(rut, nombre, apellido, cod_carrera, imagen):
