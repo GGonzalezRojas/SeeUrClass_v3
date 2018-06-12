@@ -1,9 +1,11 @@
 import boto3
 from boto3.dynamodb.conditions import Key, Attr
 from django.shortcuts import render
+from django.shortcuts import redirect
+from django.urls import reverse
 from universidad.models import *
 from usuarios.views import obtener_cursos
-
+from django.http import HttpResponseRedirect
 
 def crear_alumno(request):
     carreras = Carrera.objects.all()
@@ -34,21 +36,21 @@ def borrar_alumno(request):
 
 def mis_cursos(request):
     context = {}
+    if request.method == 'POST':
+        curso_pk = request.POST['curso_pk']
+        return HttpResponseRedirect('/ver_alumnos_curso/{}'.format(curso_pk))
     cursos = obtener_cursos(request)
     context['cursos'] = cursos
     return render(request, 'profesores/mis_cursos.html', context)
 
-def ver_alumnos_curso(request):
+
+def ver_alumnos_curso(request, pk):
     context = {}
-    print("antes de if ")
-    if request.method == 'POST':
-        print("depues de if")
-        usuario = request.user
-        print(usuario)
-    #curso = Curso.objects.get(profesor__user__username=usuario)
-    #alumnos = AlumnoCurso.objects.filter(curso=)
-    #context['curso'] = curso
-    return render(request, 'profesores/ver_alumnos_curso.html')
+    print(pk)
+    # alumnos = AlumnoCurso.objects.filter(curso__id=pk)
+    # if request.method == 'POST':
+    #     print("Hola_2")
+    return render(request, 'profesores/ver_alumnos_curso.html', {'pk':pk})
 
 
 def asistencia_curso(request):

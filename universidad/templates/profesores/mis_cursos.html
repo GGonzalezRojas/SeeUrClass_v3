@@ -3,6 +3,26 @@
 
 
 {% block main_right %}
+        <!-- Inicio Cabecera -->
+        <div class="breadcrumbs">
+                <div class="col-sm-4">
+                    <div class="page-header float-left">
+                        <div class="page-title">
+                            <h1>Cursos</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                    <div class="page-header float-right">
+                        <div class="page-title">
+                            <ol class="breadcrumb text-right">
+                                <li><a href="/dashboard/">Dashboard</a></li>
+                                <li class="active">Mis cursos</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- Fin Cabecera -->
                 {% for curso in cursos %}
                     <div class="col-lg-4 col-md-6">
                         <aside class="profile-nav alt">
@@ -13,23 +33,38 @@
                                             <img class="align-self-center rounded-circle mr-3" style="width:85px; height:85px;" alt="" src="images/admin.jpg">
                                         </a>
                                         <div class="media-body">
-                                            <h2 class="text-light display-6">Asignatura</h2>
-                                            <p>{{ curso.nombre }}</p>
+                                            <h5 class="text-light display-6">{{ curso.nombre }}</h5>
                                         </div>
                                     </div>
                                 </div>
-
-
                                 <ul class="list-group list-group-flush">
                                     <li class="list-group-item">
-                                        <a href="/ver_alumnos_curso/" > <i class="fa fa-envelope-o"></i> Ver alumnos <span class="badge badge-primary pull-right">10</span></a>
+                                        <form method="POST">
+                                            {% csrf_token %}
+                                            <input type="hidden" name="curso_pk" value="{{ curso.pk }}">
+                                            <button type="submit" class="btn btn-outline-primary btn-lg btn-block">
+                                                    <i class="fa fa-users"></i> Ver alumnos
+                                            </button>
+                                        </form>
                                     </li>
                                     <li class="list-group-item">
-                                        <a href="#"> <i class="fa fa-tasks"></i> Actividades <span class="badge badge-danger pull-right">15</span></a>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <a href="#"> <i class="fa fa-bell-o"></i> Asistencia <span class="badge badge-success pull-right">11</span></a>
-                                    </li>
+                                            <form method="POST">
+                                                {% csrf_token %}
+                                                <input type="hidden" name="curso_pk" value="{{ curso.pk }}">
+                                                <button type="button" class="btn btn-outline-secondary btn-lg btn-block">
+                                                    <i class="fa fa-tasks"></i> Actividades
+                                                </button>
+                                            </form>
+                                        </li>
+                                        <li class="list-group-item">
+                                                <form method="POST">
+                                                    {% csrf_token %}
+                                                    <input type="hidden" name="curso_pk" value="{{ curso.pk }}">
+                                                    <button type="button" class="btn btn-outline-danger btn-lg btn-block">
+                                                        <i class="fa fa-book"></i> Asistencia
+                                                    </button>
+                                                </form>
+                                            </li>
                                 </ul>
 
                             </section>

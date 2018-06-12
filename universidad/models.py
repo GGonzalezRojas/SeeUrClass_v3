@@ -35,11 +35,11 @@ class Alumno(models.Model):
 
 
 class AlumnoCurso(models.Model):
-    alumno = models.ManyToManyField(Alumno)
-    curso = models.ForeignKey(Curso, on_delete=models.CASCADE)
+    alumno = models.ForeignKey(Alumno, on_delete=models.CASCADE, related_name='alumno_curso')
+    curso = models.ForeignKey(Curso, on_delete=models.CASCADE, related_name='curso_alumno')
 
     def __str__(self):
-        return 'Alumnos en {curso}'.format(curso=self.curso.nombre)
+        return 'Alumnos en {curso} {alumno}'.format(curso=self.curso, alumno=self.alumno)
 
 
 class Facultad(models.Model):
