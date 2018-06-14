@@ -70,18 +70,12 @@
                     <strong class="card-title">Seleccionar Carrera</strong>
                 </div>
                 <div class="card-body">
-                      <!-- <select name="select" id="select" class="form-control">
-                            <option value="">Selecciones una opción</option>
-                            <option value="ING-01">Ingeniería civil industrial</option>
-                            <option value="ING-02">Ingeniería civil en informatica y telecomunicaciones</option>
-                            <option value="ING-03">Ingeniería civil en obras civiles</option>
-                      </select> -->
-                      <select name="select" id="select" class="form-control">
-                        <option value="">Selecciones una opción</option>
-                        {% for carrera in carreras %}    
-                            <option value="{{carrera.pk}}">{{carrera.nombre}}</option>
-                        {% endfor %}
-                      </select>
+                  <select name="select" id="select" class="form-control">
+                    <option value="">Selecciones una opción</option>
+                    {% for carrera in carreras %}
+                        <option value="{{carrera.pk}}">{{carrera.nombre}}</option>
+                    {% endfor %}
+                  </select>
                 </div>
             </div>
         </div>

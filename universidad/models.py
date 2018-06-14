@@ -24,7 +24,7 @@ class Carrera(models.Model):
 
 
 class Alumno(models.Model):
-    imagen = models.ImageField(null=True)
+    imagen = models.ImageField(upload_to='fotos_alumnos', default ='fotos_alumnos/None/no-img.jpg', null=True)
     carrera = models.ForeignKey(Carrera, on_delete=models.CASCADE, related_name='carrera')
     rut = models.CharField(max_length=10, unique=True, null=False, default='11111111-1')
     nombre = models.CharField(max_length=100)

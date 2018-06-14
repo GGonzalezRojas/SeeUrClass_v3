@@ -38,19 +38,28 @@ def mis_cursos(request):
     context = {}
     if request.method == 'POST':
         curso_pk = request.POST['curso_pk']
-        return HttpResponseRedirect('/ver_alumnos_curso/{}'.format(curso_pk))
+        lista_alumnos, curso = ver_alumnos_curso_v2(request, curso_pk)
+        context['curso'] = curso
+        context['lista_alumnos'] = lista_alumnos
+        return render(request, 'profesores/ver_alumnos_curso.html', context)
+        #return HttpResponseRedirect('/ver_alumnos_curso/{}'.format(curso_pk))
     cursos = obtener_cursos(request)
     context['cursos'] = cursos
     return render(request, 'profesores/mis_cursos.html', context)
 
 
-def ver_alumnos_curso(request, pk):
+def ver_alumnos_curso_v2(request, pk):
     context = {}
+    curso = Curso.objects.get(id=pk)
+    lista_alumnos = AlumnoCurso.objects.filter(curso=curso)
+    return lista_alumnos, curso
+
+
+def ver_alumnos_curso(request, context):
+    return render(request, 'profesores/ver_alumnos_curso.html', context)
+    '''context = {}
     print(pk)
-    # alumnos = AlumnoCurso.objects.filter(curso__id=pk)
-    # if request.method == 'POST':
-    #     print("Hola_2")
-    return render(request, 'profesores/ver_alumnos_curso.html', {'pk':pk})
+    return render(request, 'profesores/ver_alumnos_curso.html', {'pk':pk})'''
 
 
 def asistencia_curso(request):
