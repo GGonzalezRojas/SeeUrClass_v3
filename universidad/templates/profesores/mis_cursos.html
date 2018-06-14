@@ -57,14 +57,8 @@
                                             </form>
                                         </li>
                                         <li class="list-group-item">
-                                                <form method="POST">
-                                                    {% csrf_token %}
-                                                    <input type="hidden" name="curso_pk" value="{{ curso.pk }}">
-                                                    <button type="button" class="btn btn-outline-danger btn-lg btn-block">
-                                                        <i class="fa fa-book"></i> Asistencia
-                                                    </button>
-                                                </form>
-                                            </li>
+                                            <input type="button" class="btn btn-outline-danger btn-lg btn-block " onclick="location.href='/asistencia_cursos/';" value="Asistencia cursos" >
+                                        </li>
                                 </ul>
 
                             </section>
