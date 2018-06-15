@@ -1,0 +1,61 @@
+{% extends "profesor/base_profesor.html" %}
+
+{% block main_right %}
+        <!-- Inicio Cabecera -->
+        <div class="breadcrumbs">
+                <div class="col-sm-4">
+                    <div class="page-header float-left">
+                        <div class="page-title">
+                            <h1>Alumnos de {{ curso.nombre }}</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                    <div class="page-header float-right">
+                        <div class="page-title">
+                            <ol class="breadcrumb text-right">
+                                <li><a href="/dashboard/">Dashboard</a></li>
+                                <li><a href="/mis_cursos/">Mis cursos</a></li>
+                                <li><a href="/estadisticas_cursos/">Estadísticas cursos</a></li>
+                                <li class="active">Asistencia cursos</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- Fin Cabecera -->
+
+            <div class="col-lg-9">
+                    <div class="card">
+                        <div class="card-header">
+                            <strong class="card-title">Alumnos</strong>
+                        </div>
+                        <div class="card-body">
+                            <table class="table table-striped">
+                              <thead>
+                                <tr>
+                                  <th scope="col">#</th>
+                                  <th scope="col">Nombre</th>
+                                  <th scope="col">Apellido</th>
+                                  <th scope="col">Fecha</th>
+                                  <th scope="col">Hora</th>
+                                  <th scope="col">Porcentaje asistencia</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                              {% for numero, asistencia in alumnos_asistencia %}
+                                <tr>
+                                  <th scope="row">{{ numero }}</th>
+                                  <td>{{ asistencia.alumno.nombre }}</td>
+                                  <td>{{ asistencia.alumno.apellido }}</td>
+                                  <td>{{ asistencia.fecha }}</td>
+                                  <td>{{ asistencia.hora }}</td>
+                                  <td>@mdo</td>
+                                </tr>
+                              {% endfor %}
+                              </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+{% endblock main_right %}

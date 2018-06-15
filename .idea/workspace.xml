@@ -2,24 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b4dff8a-a003-451c-941d-9f3e1d3a161b" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/asistencia/templates/asistencia/detalle_asistencia.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asistencia/templates/asistencia/listas_asistencia.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/66905_1692939442714_3734676_n.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/66905_1692939442714_3734676_n_N0TbXbW.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IMG_20170817_232752.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeeUrClass_v3/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/SeeUrClass_v3/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeeUrClass_v3/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/SeeUrClass_v3/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asistencia/templates/asistencia/asistencia_cursos.html" beforeDir="false" afterPath="$PROJECT_DIR$/asistencia/templates/asistencia/estadisticas_cursos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asistencia/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/asistencia/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asistencia/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/asistencia/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foto_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/foto_1_pr0AVb7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imagen_awesome.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/universidad/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/universidad/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/universidad/templates/alumnos/crear_alumno.html" beforeDir="false" afterPath="$PROJECT_DIR$/universidad/templates/alumnos/crear_alumno.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/universidad/templates/profesores/mis_cursos.html" beforeDir="false" afterPath="$PROJECT_DIR$/universidad/templates/profesores/mis_cursos.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/universidad/templates/profesores/ver_alumnos_curso.html" beforeDir="false" afterPath="$PROJECT_DIR$/universidad/templates/profesores/ver_alumnos_curso.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/universidad/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/universidad/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usuarios/templates/administrador/admin_login.html" beforeDir="false" afterPath="$PROJECT_DIR$/usuarios/templates/administrador/admin_login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/usuarios/templates/profesor/base_profesor.html" beforeDir="false" afterPath="$PROJECT_DIR$/usuarios/templates/profesor/base_profesor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usuarios/templates/profesor/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/usuarios/templates/profesor/login.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,80 +28,41 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/universidad/urls.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="187">
-                  <caret line="11" selection-start-line="11" selection-end-line="11" />
-                  <folding>
-                    <element signature="e#0#28#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/universidad/views.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="246">
-                  <caret line="44" column="78" selection-start-line="44" selection-start-column="78" selection-end-line="44" selection-end-column="78" />
+                <state relative-caret-position="418">
+                  <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="43" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="listas_asistencia.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/asistencia/templates/asistencia/listas_asistencia.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="136">
+                  <caret line="8" column="53" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
                   <folding>
-                    <element signature="e#0#12#0" expanded="true" />
+                    <element signature="e#1816#1843#0#HTML" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ver_alumnos_curso.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/universidad/templates/profesores/ver_alumnos_curso.html">
+          <file leaf-file-name="detalle_asistencia.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/asistencia/templates/asistencia/detalle_asistencia.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="102">
-                  <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-                  <folding>
-                    <element signature="e#1303#1335#0#HTML" expanded="true" />
-                  </folding>
+                <state relative-caret-position="396">
+                  <caret line="44" column="55" selection-start-line="44" selection-start-column="55" selection-end-line="44" selection-end-column="55" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/SeeUrClass_v3/urls.py">
+          <file leaf-file-name="base_profesor.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/usuarios/templates/profesor/base_profesor.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="408">
-                  <caret line="24" column="65" selection-start-line="24" selection-start-column="65" selection-end-line="24" selection-end-column="65" />
-                  <folding>
-                    <element signature="e#637#669#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/SeeUrClass_v3/settings.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="599">
-                  <caret line="126" column="56" selection-start-line="126" selection-start-column="56" selection-end-line="126" selection-end-column="56" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="mis_cursos.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/universidad/templates/profesores/mis_cursos.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="316">
-                  <caret line="33" column="60" selection-start-line="33" selection-start-column="60" selection-end-line="33" selection-end-column="60" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/universidad/models.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="298">
-                  <caret line="26" column="66" selection-start-line="26" selection-start-column="66" selection-end-line="26" selection-end-column="66" />
-                  <folding>
-                    <element signature="e#0#28#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="350">
+                  <caret line="68" column="6" selection-start-line="68" selection-start-column="6" selection-end-line="68" selection-end-column="6" />
                 </state>
               </provider>
             </entry>
@@ -120,13 +72,34 @@
       <split-second>
         <leaf>
           <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/universidad/views.py">
+            <entry file="file://$PROJECT_DIR$/asistencia/views.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="182">
-                  <caret line="42" column="30" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
+                <state relative-caret-position="212">
+                  <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
                   <folding>
                     <element signature="e#0#12#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/asistencia/models.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="119">
+                  <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+                  <folding>
+                    <element signature="e#0#28#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="mis_cursos.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/universidad/templates/profesores/mis_cursos.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="683">
+                  <caret line="60" column="45" lean-forward="true" selection-start-line="60" selection-start-column="45" selection-end-line="60" selection-end-column="45" />
                 </state>
               </provider>
             </entry>
@@ -171,7 +144,6 @@
         <option value="$PROJECT_DIR$/universidad/templates/alumnos/borrar_alumno.html" />
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/asistencia/admin.py" />
-        <option value="$PROJECT_DIR$/asistencia/views.py" />
         <option value="$PROJECT_DIR$/usuarios/urls.py" />
         <option value="$PROJECT_DIR$/asistencia/models.py" />
         <option value="$PROJECT_DIR$/usuarios/models.py" />
@@ -182,8 +154,6 @@
         <option value="$PROJECT_DIR$/universidad/admin.py" />
         <option value="$PROJECT_DIR$/usuarios/templates/profesor/dashboard.html" />
         <option value="$PROJECT_DIR$/universidad/urls.py" />
-        <option value="$PROJECT_DIR$/usuarios/templates/profesor/base_profesor.html" />
-        <option value="$PROJECT_DIR$/universidad/templates/profesores/mis_cursos.html" />
         <option value="$PROJECT_DIR$/usuarios/templates/profesor/login.html" />
         <option value="$PROJECT_DIR$/usuarios/templates/administrador/admin_login.html" />
         <option value="$PROJECT_DIR$/universidad/templates/alumnos/crear_alumno.html" />
@@ -192,6 +162,13 @@
         <option value="$PROJECT_DIR$/SeeUrClass_v3/settings.py" />
         <option value="$PROJECT_DIR$/universidad/views.py" />
         <option value="$PROJECT_DIR$/universidad/templates/profesores/ver_alumnos_curso.html" />
+        <option value="$PROJECT_DIR$/asistencia/urls.py" />
+        <option value="$PROJECT_DIR$/universidad/templates/profesores/mis_cursos.html" />
+        <option value="$PROJECT_DIR$/asistencia/templates/asistencia/estadisticas_cursos.html" />
+        <option value="$PROJECT_DIR$/asistencia/templates/asistencia/listas_asistencia.html" />
+        <option value="$PROJECT_DIR$/usuarios/templates/profesor/base_profesor.html" />
+        <option value="$PROJECT_DIR$/asistencia/templates/asistencia/detalle_asistencia.html" />
+        <option value="$PROJECT_DIR$/asistencia/views.py" />
       </list>
     </option>
   </component>
@@ -224,6 +201,60 @@
             <path>
               <item name="SeeUrClass_v3" type="b2602c69:ProjectViewProjectNode" />
               <item name="SeeUrClass_v3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SeeUrClass_v3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SeeUrClass_v3" type="462c0819:PsiDirectoryNode" />
+              <item name="asistencia" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SeeUrClass_v3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SeeUrClass_v3" type="462c0819:PsiDirectoryNode" />
+              <item name="asistencia" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SeeUrClass_v3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SeeUrClass_v3" type="462c0819:PsiDirectoryNode" />
+              <item name="asistencia" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="asistencia" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SeeUrClass_v3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SeeUrClass_v3" type="462c0819:PsiDirectoryNode" />
+              <item name="universidad" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SeeUrClass_v3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SeeUrClass_v3" type="462c0819:PsiDirectoryNode" />
+              <item name="universidad" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SeeUrClass_v3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SeeUrClass_v3" type="462c0819:PsiDirectoryNode" />
+              <item name="universidad" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="profesores" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SeeUrClass_v3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SeeUrClass_v3" type="462c0819:PsiDirectoryNode" />
+              <item name="usuarios" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SeeUrClass_v3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SeeUrClass_v3" type="462c0819:PsiDirectoryNode" />
+              <item name="usuarios" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SeeUrClass_v3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SeeUrClass_v3" type="462c0819:PsiDirectoryNode" />
+              <item name="usuarios" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="profesor" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -260,6 +291,128 @@
       <recent name="$PROJECT_DIR$/universidad" />
       <recent name="$PROJECT_DIR$/universidad/templates/alumnos" />
     </key>
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/asistencia/models.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/asistencia/views.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/db.sqlite3</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/universidad/templates/profesores/mis_cursos.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/universidad/urls.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/universidad/views.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/usuarios/templates/profesor/base_profesor.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/usuarios/urls.py</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/asistencia/migrations/0002_auto_20180614_1827.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/asistencia/templates/asistencia/asistencia_cursos.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/asistencia/urls.py</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/universidad/templates/profesores/asistencia_curso.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/universidad/templates/profesores/mis_alumnos.html</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -320,11 +473,10 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.22097759" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14110756" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.1802444" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.106496274" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3299389" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -335,6 +487,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3299389" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -349,6 +502,30 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/universidad/templates/profesores/mis_cursos.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="60" selection-start-line="33" selection-start-column="60" selection-end-line="33" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/universidad/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="26" column="66" selection-start-line="26" selection-start-column="66" selection-end-line="26" selection-end-column="66" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/universidad/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="30" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/usuarios/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -526,30 +703,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/asistencia/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/asistencia/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="114" selection-start-line="12" selection-start-column="114" selection-end-line="12" selection-end-column="114" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/universidad/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -599,42 +756,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/usuarios/templates/profesor/base_profesor.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="30" column="18" lean-forward="true" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/universidad/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/universidad/static/images/avatar/1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/universidad/static/images/admin.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/universidad/templates/profesores/mis_cursos.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="33" column="60" selection-start-line="33" selection-start-column="60" selection-end-line="33" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/universidad/static/images/alumnos/gg_1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/universidad/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
+        <state relative-caret-position="425">
           <caret line="26" column="66" selection-start-line="26" selection-start-column="66" selection-end-line="26" selection-end-column="66" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
@@ -642,28 +766,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fotos_alumnos/ggonzalez_1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SeeUrClass_v3/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="65" selection-start-line="24" selection-start-column="65" selection-end-line="24" selection-end-column="65" />
-          <folding>
-            <element signature="e#637#669#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SeeUrClass_v3/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="599">
+        <state relative-caret-position="2142">
           <caret line="126" column="56" selection-start-line="126" selection-start-column="56" selection-end-line="126" selection-end-column="56" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SeeUrClass_v3/media/fotos_alumnos/foto_1.jpg">
-      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/universidad/templates/alumnos/crear_alumno.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -672,28 +780,107 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/66905_1692939442714_3734676_n.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/66905_1692939442714_3734676_n_N0TbXbW.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/universidad/views.py">
+    <entry file="file://$PROJECT_DIR$/universidad/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="44" column="78" selection-start-line="44" selection-start-column="78" selection-end-line="44" selection-end-column="78" />
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
           <folding>
-            <element signature="e#0#12#0" expanded="true" />
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/universidad/templates/profesores/ver_alumnos_curso.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
+        <state relative-caret-position="17">
           <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
           <folding>
             <element signature="e#1303#1335#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SeeUrClass_v3/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="e#637#669#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asistencia/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asistencia/templates/asistencia/estadisticas_cursos.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="65" lean-forward="true" selection-start-line="20" selection-start-column="65" selection-end-line="20" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/universidad/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asistencia/templates/asistencia/listas_asistencia.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="53" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
+          <folding>
+            <element signature="e#1816#1843#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/usuarios/templates/profesor/base_profesor.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="68" column="6" selection-start-line="68" selection-start-column="6" selection-end-line="68" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asistencia/templates/asistencia/detalle_asistencia.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="44" column="55" selection-start-line="44" selection-start-column="55" selection-end-line="44" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asistencia/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/universidad/templates/profesores/mis_cursos.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="683">
+          <caret line="60" column="45" lean-forward="true" selection-start-line="60" selection-start-column="45" selection-end-line="60" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asistencia/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
           </folding>
         </state>
       </provider>
