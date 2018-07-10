@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4b4dff8a-a003-451c-941d-9f3e1d3a161b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/asistencia/templates/asistencia/detalle_asistencia.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asistencia/templates/asistencia/listas_asistencia.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asistencia/templates/asistencia/asistencia_cursos.html" beforeDir="false" afterPath="$PROJECT_DIR$/asistencia/templates/asistencia/estadisticas_cursos.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asistencia/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/asistencia/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asistencia/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/asistencia/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/universidad/templates/profesores/mis_cursos.html" beforeDir="false" afterPath="$PROJECT_DIR$/universidad/templates/profesores/mis_cursos.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usuarios/templates/profesor/base_profesor.html" beforeDir="false" afterPath="$PROJECT_DIR$/usuarios/templates/profesor/base_profesor.html" afterDir="false" />
-    </list>
+    <list default="true" id="4b4dff8a-a003-451c-941d-9f3e1d3a161b" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +39,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="detalle_asistencia.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="detalle_asistencia.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/asistencia/templates/asistencia/detalle_asistencia.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="396">
@@ -67,6 +57,18 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/asistencia/models.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="119">
+                  <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+                  <folding>
+                    <element signature="e#0#28#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
         </leaf>
       </split-first>
       <split-second>
@@ -75,21 +77,9 @@
             <entry file="file://$PROJECT_DIR$/asistencia/views.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="212">
-                  <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+                  <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
                   <folding>
                     <element signature="e#0#12#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/asistencia/models.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="119">
-                  <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-                  <folding>
-                    <element signature="e#0#28#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -465,7 +455,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1920" y="-413" width="1920" height="1080" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -473,8 +462,8 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.1802444" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.106496274" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.1802444" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.106496274" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -858,6 +847,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/universidad/templates/profesores/mis_cursos.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="683">
+          <caret line="60" column="45" lean-forward="true" selection-start-line="60" selection-start-column="45" selection-end-line="60" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/asistencia/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -868,17 +864,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/universidad/templates/profesores/mis_cursos.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="683">
-          <caret line="60" column="45" lean-forward="true" selection-start-line="60" selection-start-column="45" selection-end-line="60" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/asistencia/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="212">
-          <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+          <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>
